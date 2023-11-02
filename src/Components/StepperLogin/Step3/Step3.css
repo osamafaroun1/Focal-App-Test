@@ -1,0 +1,52 @@
+.Ah-payment{
+    
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Ah-content{
+    width: 70%;
+    height: 61vh;
+    background-color: white;
+    padding: 50px 40px;
+    font-family:Montserrat ;
+    box-shadow: 0px 4px 20px 0px rgba(40, 40, 40, 0.15);
+
+
+}
+.Ah-title{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+}
+.Ah-text{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+}
+@media only screen and (min-width:1600px){
+    
+    .Ah-title{
+        font-size: 30px;
+    }
+    .Ah-text{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:500px){
+    .Ah-content{
+        width: 90%;
+        height: max-content;
+    }
+    
+    .Ah-title{
+        font-size: 16px !important;
+        
+    }
+    .Ah-text{
+        font-size: 14px;
+    }
+}
