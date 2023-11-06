@@ -9,9 +9,10 @@
 
 .Ah-content{
     width: 70%;
-    height: 61vh;
-    background-color: white;
-    padding: 50px 40px;
+  /*  height: 61vh;*/
+     height: max-content;
+     background-color: white;
+  /*  padding: 50px 40px;*/
     font-family:Montserrat ;
     box-shadow: 0px 4px 20px 0px rgba(40, 40, 40, 0.15);
 
@@ -39,7 +40,7 @@
 @media only screen and (max-width:500px){
     .Ah-content{
         width: 90%;
-        height: max-content;
+       /* height: max-content;*/
     }
     
     .Ah-title{

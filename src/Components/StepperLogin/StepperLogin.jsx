@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Stepper from './../../../node_modules/react-stepper-horizontal/lib/Stepper'
 import './StepperLogin.css';
 import Swal from 'sweetalert2'
-
 import Step1 from './Step1/Step1';
 import Step2 from './Step2/Step2';
 import Step3 from './Step3/Step3';
@@ -57,10 +56,10 @@ function StepperLogin() {
             <div style={{ padding: '20px' }}>
                 {getSectionComponent()}
                 {(activeStep !== 0 && activeStep !== steps.length )
-                    && <button className='nb-buttons1' onClick={() => setActiveStep(activeStep - 1)}>Previous</button>
+                    && <button  onClick={() => setActiveStep(activeStep - 1)}>Previous</button>
                 }
                 {activeStep !== steps.length - 1
-                    && <button className='nb-buttons2' onClick={() => {
+                    && <button  onClick={() => {
                         if ( activeStep == 0 ){
                             if ( nextButton1 !=='' ){
                                 setActiveStep(activeStep + 1);
@@ -91,7 +90,7 @@ function StepperLogin() {
                     } }>Next</button>
                 }
                 {(activeStep === 3 )
-                    && <button className='nb-buttons2' >Confirm</button>
+                    && <button  >Confirm</button>
                 }
             </div>
         </div>
@@ -99,3 +98,12 @@ function StepperLogin() {
 }
 
 export default StepperLogin
+{
+
+    /*
+className='nb-buttons1'
+className='nb-buttons2'
+className='nb-buttons2'
+
+    */
+}
